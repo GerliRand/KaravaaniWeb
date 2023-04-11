@@ -26,6 +26,8 @@ import Admins from './Admins'
 import Login from './Login'
 import Container from 'react-bootstrap/Container';
 
+import Video from './img/taustavideo.mp4'
+
 function App() {
 
   //State - ilmotuksen varten
@@ -50,7 +52,8 @@ function App() {
   }, [])
 
   return (
-    <div className="taustakuva">
+    <div className="tausta">
+      <video src={Video} autoPlay loop muted playsInline className='taustaVideo' />
       <Router>
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
           <Container>
