@@ -86,7 +86,7 @@
   background-image: linear-gradient(whitesmoke, whitesmoke);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-position: -80vw, 0;
+  background-position: -85vw, 0;
   animation: backcolor 7s linear alternate;
 }
 @keyframes backcolor{
@@ -1275,11 +1275,12 @@ input[type=email],
 }
 @media screen and (max-width: 500px){
   .etuTitle{
-    font-size: 15vw;
+    font-size: 16vw;
+    font-weight: 700;
   }
   .etuText{
-    font-size: 26px;
-    left: 20%;
+    font-size: 7vw;
+    left: 15%;
     top: 55%
   }
   .loginWindow{
