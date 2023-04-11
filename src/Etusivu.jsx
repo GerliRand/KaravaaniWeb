@@ -5,9 +5,7 @@ const Etusivu = () => {
     return (
         <div className='divEtusivu'>
             <h1 className='etuTitle'>Matkusta</h1>
-            <div className='etuText'>
-                <h4>vuokraamalla matkailuauto</h4>
-            </div>          
+            <h4 className='etuText'>vuokraamalla matkailuauto</h4>
         </div>
     )
 }
