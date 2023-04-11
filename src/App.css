@@ -1,0 +1,1257 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./fonts/Poppins-Regular.ttf) format('ttf');
+}
+
+/*----- PÄÄSIVU -----*/
+.taustakuva {
+  background-image: url('./img/backpic.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./fonts/Poppins-Regular.ttf) format('ttf');
+}
+
+.tsr {
+  font-size: 25px;
+  font-weight: 700;
+  color: #beb66c;
+  margin-top: 6px;
+  margin-left: -40px;
+}
+
+.matka {
+  color: rgb(203, 199, 199);
+  font-size: 25px;
+  padding-left: 5px;
+  margin-top: 6px;
+}
+
+.me-auto{
+  margin-left: 250px;
+  font-size: 20px;
+}
+.appTiedot{
+  font-size: 20px;
+}
+
+.logOutBtn {
+  margin-left: 20px;
+  font-size: 16px;
+  background-color: #222;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-radius: 5px;
+}
+
+
+/*----- ETUSIVU -----*/
+.divEtusivu {
+  text-align: center;
+}
+.etuSpan{
+  transform: translate(0%, 0%);
+  width: 90%;
+}
+.etuSpan span{
+  display: inline-block;
+  font-size: 9vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1vw;
+
+  text-shadow: 0 15px 45px rgba(0, 0, 0, 0.91);
+  position: relative;
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards;
+}
+
+@keyframes fall{
+  100%{
+    transform: rotateY(0);
+  }
+}
+
+.etuSpan span:nth-child(2){
+  animation-delay: 0.7s;
+}
+.etuSpan span:nth-child(3){
+  animation-delay: 1.4s;
+}
+.etuSpan span:nth-child(4){
+  animation-delay: 2.1s;
+}
+.etuSpan span:nth-child(5){
+  animation-delay: 2.8s;
+}
+.etuSpan span:nth-child(6){
+  animation-delay: 3.5s;
+}
+.etuSpan span:nth-child(7){
+  animation-delay: 4.2s;
+}
+.etuSpan span:nth-child(8){
+  animation-delay: 4.9s;
+}
+.etuSpan span:nth-child(9){
+  animation-delay: 5.5s;
+}
+.etuSpan h4{
+  display: inline-block;
+  font-size: 3.5vw;
+  color: white;
+  text-shadow: 0px 5px 25px rgb(0, 0, 0, 0.8);
+
+  transform: translateX(-180vh);
+  animation: moving 8s forwards;
+  animation-delay: 4s;
+}
+@keyframes moving{
+  100%{
+    transform: rotateX(0);
+  }
+}
+
+
+/*----- LOGIN -----*/
+.loginWindow {
+  margin-left: 75%;
+  margin-top: 10px;
+}
+
+.loginWindow h4 {
+  font-size: 20px;
+}
+
+#logEmpty {
+  margin-left: 5px;
+}
+
+.passWord {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-width: 0;
+  margin-top: 2px;
+}
+
+
+/*----- ILMOITUS -----*/
+.neg {
+  background-color: rgb(219, 149, 112);
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+.pos {
+  background-color: rgb(188, 187, 131);
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+
+/*----- YLEISET -----*/
+.divBack {
+  background-color: rgb(194, 208, 211);
+  min-height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.titleName {
+  padding-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/*----- TARJOUKSET -----*/
+.tarjousPic {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/dream.jpg');
+  background-size: 350px 420px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tarjousTxt {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+.tarjousTxt2{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.tarjousTxt3{
+  font-size: 18px;
+  text-align: center;
+}
+.tarjousTxt4{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40%;
+}
+.tarjousYhtLink{
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #91830834;
+  text-align: center;
+}
+.tarjousVaraaLink{
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #9183086e;
+  text-align: center;
+  margin-top: 5px;
+}
+.tarjousContainer-slider{
+    max-width: 6s 00px;
+    height: 400px;
+    margin: 100px auto 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*----- VUOKRAUSEHDOT -----*/
+.divEhdot {
+  background-color: rgb(194, 208, 211);
+  margin: auto;
+}
+
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexbox-item {
+  width: 700px;
+  margin: 10px;
+  border: 1px solid #918308;
+  background-color: rgb(194, 208, 211);
+  height: auto;
+}
+
+.flexbox-item h5 {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.flexbox-item p {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.ehdotBtn {
+  font-size: 14px;
+  border: 1px solid #222;
+  background-color: #9183086e;
+  padding: 0 5%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/*btn bact to top*/
+.backTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 24px;
+  color: #918308;
+  background: none;
+  border: none;
+}
+
+
+/*----- VALOKUVAT -----*/
+.gallery {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.gallery .pics:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+/*model*/
+.model {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+.closeBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+}
+
+
+/*----- VUOKRATTAVAT AUTOT-----*/
+/*--- Slider ---*/
+.container-slider {
+  max-width: 6s 00px;
+  height: 400px;
+  margin: 100px auto 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* @media screen and (max-width: 700px) {
+  .container-slider {
+    margin: 100px 10px 0;
+  }
+} */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity ease-in-out 0.4s;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.active-anim {
+  opacity: 1;
+}
+.btn-slide {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.prev {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+.next {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+.container-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid rgb(32, 32, 32);
+  margin: 0 5px;
+  background: rgb(32, 32, 32);
+  cursor: pointer;
+}
+.dot.active {
+  background: #f1f1f1;
+}
+/* ----- */
+
+.ehdotLink {
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #91830834;
+  padding: 5px;
+  text-align: center;
+}
+.galleriaLink {
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #9183086e;
+  padding: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+.avText {
+  margin-left: 60px;
+}
+.vaTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.leftText {
+  margin-left: 20px;
+}
+.tiedotBtn {
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #91830834;
+  padding: 0% 15%;
+  text-align: center;
+}
+
+
+/*----- Vuokrattava Auto Tiedot -----*/
+.backTiedotBtn {
+  font-size: 16px;
+  border: 1px solid #222;
+  background-color: #91830834;
+  padding: 0% 15%;
+  margin-left: 5%;
+}
+
+
+/*----- HINNASTO -----*/
+.hinnastoName{
+  font-size: 18px;
+  text-align: center;
+}
+.hinnastoTable {
+  margin-top: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hinnastoPic {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/winterfront.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.hinnastoTxt {
+  font-size: 14px;
+  text-align: center;
+}
+
+
+/*----- LISÄPALVELUT -----*/
+.palvelutPic {
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/meiehobby.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/*----- PALAUTE -----*/
+.feed {
+  text-align: left;
+  width: 400px;
+  max-height: 200px;
+  margin: 10px;
+  padding-left: 10px;
+  border: 1px solid #918308;
+  border-radius: 4px;
+  /* background-color: #cbc9b3; */
+}
+.feedName {
+  font-size: 16px;
+  font-style: italic;
+}
+.feedRating {
+  background-color: rgb(250, 224, 75);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 3px;
+  width: min-content;
+  border-radius: 40%;
+}
+.feedText {
+  font-size: 14px;
+}
+.feedDay{
+  font-size: 12px;
+}
+.feedDelete {
+  color: #363109;
+  background-color: rgb(194, 208, 211);
+  border: none;
+  margin-left: 80%;
+  margin-top: -50px;
+  font-size: medium;
+}
+.divPalaute {
+  /* background: #222;
+  opacity: 0.7; */
+  width: 80%;
+  margin-left: 0%;
+  padding: 40px;
+  border-radius: 4px;
+}
+.pText {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 20px;
+}
+.divPalaute input {
+  margin-bottom: 5px;
+  width: 100%;
+}
+.divPalaute textarea {
+  width: 100%;
+}
+.emptyBtn:hover {
+  background-color: #eebe80;
+  color: black;
+}
+
+
+/*----- VARAA -----*/
+.varaaSivu {
+  background-color: rgb(194, 208, 211);
+  background-attachment: fixed;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.VaraaNoutoPalautus{
+  width: 100px;
+}
+
+input[type=email],
+  [type=text],
+  [type=number],
+  [type=phone],
+  [type=datetime-local] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.varaaPaivat {
+  width: auto;
+  height: auto;
+  float: left;
+  padding: 20px;
+  margin-left: 10%;
+}
+
+.varaaPaivaHlo {
+  width: auto;
+  height: auto;
+  float: left;
+  padding-top: 50px;
+  margin-right: 5%;
+  margin-left: 10%;
+}
+.varaaPaivaHlo input{
+  margin-bottom: -20px;
+}
+
+.varaaPaivatTiedot {
+  width: auto;
+  height: auto;
+  float: left;
+  padding-top: 50px;
+  margin-left: 5%;
+}
+
+.varaaPaivatTiedot input{
+  margin-bottom: -20px;
+}
+
+.varaaLisatarvikkeetSivu {
+  background-color: rgb(194, 208, 211);
+  background-attachment: fixed;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.varaaLisatarvikkeet {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 500px;
+  display: inline-block;
+  text-align: left;
+}
+
+.varauslbVaraa {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  font-size: 17px;
+}
+
+.varaaEmail{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin-top: 40px;
+  /* max-width: 340px; */
+}
+
+.varaaEmail input{
+  /* padding-left: 155px; */
+  border-radius: 6px;
+  /* max-width: 340px; */
+}
+
+.varauslb {
+  margin-bottom: 5px;
+}
+
+
+/*----- YHTEYSTIEDOT -----*/
+.divYht {
+  background-color: rgb(194, 208, 211);
+  margin: auto;
+  min-height: 100%;
+}
+
+.divInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divInfo-item {
+  width: 600px;
+  margin: 10px;
+}
+
+.yhtForm {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 16px;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 4px;
+  border: #918308;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.yhtForm h4 {
+  font-size: 18px;
+}
+
+.yhtForm label {
+  font-size: 14px;
+}
+
+.divInfo-item h5 {
+  font-size: 16px;
+}
+
+.divInfo-item p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.gMap {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+
+/*----- ASIAKKAAT & VARAUKSET & ADMIN -----*/
+.addBtn {
+  background-color: #918308;
+  color: whitesmoke;
+  padding: 2px 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left: 10px;
+}
+
+.asvarEditDelete {
+  background-color: #918308;
+  color: whitesmoke;
+  font-size: 12px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.addAsVar h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.addAsVar form {
+  font-size: 16px;
+}
+
+.editAsVar h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.editAsVar form {
+  font-size: 14px;
+}
+
+
+/*----- ASIAKKAAN VARAUKSET -----*/
+.asvarBtn {
+  background-color: #918308;
+  color: whitesmoke;
+  font-size: 14px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left: 5px;
+}
+
+.asVarShow {
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #918308;
+}
+
+.asVarList {
+  font-size: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #918308;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.asVarList th {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.asVarList td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*----- ASIAKKAAT -----*/
+.asiakkaatList {
+  font-size: 12px;
+  text-align: left;
+  margin: 20px;
+}
+
+.asiakkaatList th {
+  padding-right: 15px;
+}
+
+.asiakkaatList td {
+  padding-right: 15px;
+}
+
+.trAsiakkaat {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #918308;
+}
+
+
+/*----- ASIAKAS ADD -----*/
+.terms {
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.true {
+  color: green;
+  margin-left: 5px;
+}
+
+.false {
+  color: red;
+  margin-left: 5px;
+}
+
+
+/*----- VARAUKSET -----*/
+.varauksetList {
+  font-size: 12px;
+  text-align: left;
+  margin: 20px;
+}
+
+.varauksetList th {
+  padding-right: 15px;
+}
+
+.varauksetList td {
+  padding-right: 15px;
+
+}
+
+.trVaraukset {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #918308;
+}
+
+
+/*----- VARAUS ADD -----*/
+.addPvm {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0;
+  border-radius: 4px;
+  margin-bottom: 1px;
+}
+.editPvm {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0;
+  border-radius: 4px;
+  margin-bottom: 1px;
+}
+
+.varauslb {
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.addVarausPvm {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0;
+  border-radius: 4px;
+  margin-bottom: 1px;
+}
+
+
+/*----- ADMIN -----*/
+.adminList {
+  font-size: 12px;
+  text-align: left;
+  margin: 20px;
+}
+
+.adminList th {
+  padding-right: 15px;
+}
+
+.adminList td {
+  padding-right: 15px;
+}
+
+.trAdmin {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #918308;
+}
+
+.addSalas {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-color: none;
+  border-width: 0;
+  margin-bottom: 2px;
+}
+
+/***** RESPONSIIVISUS *****/
+@media screen and (max-width: 1700px) {
+  .varaaPaivat,
+  .varaaPaivaHlo,
+  .varaaPaivatTiedot {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: rgb(194, 208, 211);
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:1470px) {
+  .me-auto{
+    margin-left: 40px;
+  }
+  .tsr{
+    margin-left: 10px;
+  }
+
+  .varaaPaivat,
+  .varaaPaivaHlo,
+  .varaaPaivatTiedot {
+    margin-right: 0%;
+    margin-left: 0%;
+    background-color: rgb(194, 208, 211);
+    margin-top: 0;
+    width: 30%;
+  }
+  /*Tarjoukset*/
+  .tarjousTxt2{
+    margin-top: 40px;
+  }
+  .tarjousTxt4{
+    margin-bottom: 10%;
+  }
+  .tarjousContainer-slider{
+    margin-top: 0px;
+  }
+
+  /*Vuokrattavat autot*/
+  .container-slider{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .etuSpan h4{
+    font-size: 4.5vw;
+  }
+}
+
+
+@media screen and (max-width:950px) {
+  #responsive-navbar-nav{
+    font-size: 16px;
+  }
+  .varaaSivu {
+    background-color: rgb(194, 208, 211);
+    background-attachment: fixed;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .varaaPaivat {
+    padding: auto;
+    padding-top: 15px;
+    margin: auto;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(194, 208, 211);
+  }
+  .varaaPaivaHlo,
+  .varaaPaivatTiedot {
+    float: left;
+    background-color: rgb(194, 208, 211);
+    width: 50%;
+    height: 600px;
+  }
+  .tsr{
+    font-size: 19px;
+    margin-top: 12px;
+  }
+  .matka{
+    font-size: 19px;
+    margin-top: 12px;
+  }
+  .me-auto{
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .appTiedot{
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  .logOutBtn{
+    font-size: 15px;
+  }
+  /*Vuokrattavat autot*/
+  .container-slider{
+    margin-top: 20px;
+  }
+  /*Tarjoukset*/
+  .tarjousTxt {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .tarjousTxt2{
+    font-size: 18px;
+    margin-top: 500px;
+    margin-bottom: 10px;
+  }
+  .tarjousTxt3{
+    font-size: 18px;
+  }
+  .tarjousTxt4{
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .tarjousContainer-slider{
+    margin-top: -650px;
+  }
+  /*Login*/
+  .loginWindow {
+    margin-left: 65%;
+  }
+  .loginWindow h4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 820px){
+  .etuSpan h4{
+    font-size: 4.5vw;
+  }
+  .loginWindow{
+    margin-left: 60%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .etuSpan h4{
+    font-size: 4.5vw;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .varaaPaivat,
+  .varaaPaivaHlo,
+  .varaaPaivatTiedot {
+    padding: auto;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgb(194, 208, 211);
+  }
+  .addPvm {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  }
+  .varauslbVaraa {
+    font-size: 16px;
+  }
+  .tsr{
+    margin-left: 10px;
+  }
+  .matka{
+    font-size: 18px;
+    margin-top: 0;
+    padding-left: 10px;
+  }
+  .me-auto{
+    font-size: 16px;
+  }
+  .appTiedot{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .logOutBtn{
+    font-size: 14px;
+  }
+  .titleName{
+    font-size: 18px;
+  }
+  /*Etusivu*/
+  .etuSpan h4{
+    font-size: 4.5vw;
+  }
+
+  /*Tarjoukset*/
+  .tarjousTxt {
+    font-size: 18px;
+  }
+  .tarjousTxt2{
+    font-size: 16px;
+    margin-top: 500px;
+    margin-bottom: 10px;
+  }
+  .tarjousTxt3{
+    font-size: 16px;
+  }
+  .tarjousTxt4{
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  .tarjousContainer-slider{
+    margin-top: -650px;
+  }
+
+  /*Vuokrattavat autot*/
+  .divInfo-item {
+    width: 400px;
+  }
+  .avText {
+    margin-left: 0px;
+  }
+  .vaTitle {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /*Hinnasto*/
+  .hinnastoName{
+    text-align: center;
+    font-size: 14px;
+  }
+  .hinnastoTable {
+    margin-top: 20px;
+  }
+  /*Palaute*/
+  .pText {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .divPalaute {
+    /* background: #222;
+    opacity: 0.7; */
+    width: 90%;
+    margin-left: 0%;
+    padding: 40px;
+    border-radius: 4px;
+  }
+  .divPalaute input {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 14px;
+  }
+  .divPalaute textarea{
+    font-size: 14px;
+  }
+  .feed {
+    width: 350px; 
+  }
+  .feedName {
+    font-size: 14px;
+  }
+  .feedRating {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px;
+    width: min-content;
+    border-radius: 40%;
+  }
+  /*Login*/
+  .loginWindow {
+    margin-left: 40%;
+  }
+  .loginWindow h4 {
+    font-size: 18px;
+  }
+
+  /*Yhteystiedot*/
+  .yhtForm {
+    font-size: 14px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .yhtForm h4{
+    font-size: 16px;
+  }
+  .divInfo-item h5 {
+    font-size: 14px;
+  }
+  .divInfo-item p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px){
+  .etuSpan h4{
+    font-size: 4.5vw;
+  }
+  .loginWindow{
+    margin-left: 20%;
+  }
+}
