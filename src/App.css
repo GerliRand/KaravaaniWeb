@@ -13,7 +13,6 @@
 }
 
 .taustaVideo{
-  /* width: 100vw; */
   max-width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -79,14 +78,14 @@
   transform: translate(-50%, -50%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 11vw;
-  font-weight: 800;
+  font-weight: 700;
   -webkit-text-stroke: 2px whitesmoke;
   color: transparent;
 
   background-image: linear-gradient(whitesmoke, whitesmoke);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  background-position: -85vw, 0;
+  background-position: -100vw, 0;
   animation: backcolor 7s linear alternate;
 }
 @keyframes backcolor{
@@ -1275,12 +1274,12 @@ input[type=email],
 }
 @media screen and (max-width: 500px){
   .etuTitle{
-    font-size: 16vw;
+    font-size: 15vw;
     font-weight: 700;
   }
   .etuText{
-    font-size: 7vw;
-    left: 15%;
+    font-size: 6vw;
+    left: 10%;
     top: 55%
   }
   .loginWindow{

@@ -4,7 +4,7 @@ import React from 'react'
 const Etusivu = () => {
     return (
         <div className='divEtusivu'>
-            <h1 className='etuTitle'>Matkusta</h1>
+            <h1 className='etuTitle'>MATKUSTA</h1>
             <h4 className='etuText'>vuokraamalla matkailuauto</h4>
         </div>
     )
