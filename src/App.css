@@ -2,6 +2,11 @@
   font-family: 'MyFont';
   src: local('MyFont'), url(./fonts/Poppins-Regular.ttf) format('ttf');
 }
+@font-face{
+  font-family: 'libreb';
+  src: url(./fonts/LibreBaskerville-Bold.ttf);
+}
+
 
 /*----- PÄÄSIVU -----*/
 .tausta {
@@ -20,13 +25,13 @@
   z-index: -1;
   bottom: 0;
 }
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 20/9){
   .taustaVideo{
     height: auto;
     width: 100%;
   }
 }
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 20/9){
   .taustaVideo{
     height: 100%;
     width: auto;
@@ -76,10 +81,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'libreb';
   font-size: 11vw;
   font-weight: 700;
-  -webkit-text-stroke: 2px whitesmoke;
+  -webkit-text-stroke: 1px whitesmoke;
   color: transparent;
 
   background-image: linear-gradient(whitesmoke, whitesmoke);
@@ -1274,8 +1279,7 @@ input[type=email],
 }
 @media screen and (max-width: 500px){
   .etuTitle{
-    font-size: 15vw;
-    font-weight: 700;
+    font-size: 14vw;
   }
   .etuText{
     font-size: 6vw;
